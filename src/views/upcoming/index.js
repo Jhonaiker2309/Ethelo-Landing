@@ -13,7 +13,7 @@ export default function Open() {
                     align="left"
                     color={"#213555"}
                 >
-                    Open Engagement
+                    Upcoming Engagement
                 </Text>
             </Center>
             <Flex align="center" justify='space-between' direction="row" mb={5} mx={"11%"}>

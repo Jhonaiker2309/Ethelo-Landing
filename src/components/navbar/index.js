@@ -12,7 +12,9 @@ import {
     useColorModeValue,
     useBreakpointValue,
     useDisclosure,
+    Image
 } from '@chakra-ui/react';
+import ethelo from "../../images/ethelo.png"
 
 export default function WithSubnavigation() {
 
@@ -34,13 +36,7 @@ export default function WithSubnavigation() {
                     display={{ base: 'flex', md: 'none' }}>
                 </Flex>
                 <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
-                    <Text
-                        textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
-                        fontFamily={'heading'}
-                        fontSize='2xl'
-                        color={"#213555"}>
-                        ETHELO
-                    </Text>
+                    <Image src={ethelo} width="10%"/>
                 </Flex>
 
                 <Stack

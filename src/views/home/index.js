@@ -30,7 +30,7 @@ const Home = () => {
                 backgroundPosition: 'center',                
             }}
         >
-            <Grid templateColumns='repeat(2, 1fr)' gap={50} mt="-50px">
+            <Grid templateColumns='repeat(2, 1fr)' gap={240} mt="-50px">
             <div></div>
                 <GridItem w="100%" pl={10}>
                 <Text
