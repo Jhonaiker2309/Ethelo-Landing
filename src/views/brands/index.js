@@ -1,55 +1,27 @@
-import React from 'react'
-import { Box, Grid, Flex, Image } from '@chakra-ui/react'
-import logoImage from "../../images/logo.png"
+import React from 'react';
+import { Box, SimpleGrid, Image, Center } from '@chakra-ui/react';
+import logoImage from "../../images/logo.png";
 
 export default function Brands() {
+    const listOfLogos = [logoImage, logoImage, logoImage, logoImage, logoImage, logoImage, logoImage, logoImage, logoImage, logoImage]
     return (
-        <Box px="10%" my="6%">
-            <Flex align="center" justify='space-between' direction="row">
-                {listOfLogos.map((logo)=>(
-                    <Image
-                        boxSize='100px'
-                        objectFit='cover'
-                        src={logo}
-                        alt='Dan Abramov'
-                    />                
-                ))}
-            </Flex>
-            <Flex align="center" justify='space-between' direction="row" mt="4%">
-                {listOfLogos.map((logo) => (
-                    <Image
-                        boxSize='100px'
-                        objectFit='cover'
-                        src={logo}
-                        alt='Dan Abramov'
-                    />
-                ))}
-            </Flex>            
+        <Box px="5%" my="6%">
+            <Center>
+                <SimpleGrid columns={[2, null, 5]} w="100%" justifyItems="center">
+                    {listOfLogos.map((logo) => (
+                        <Image
+                            key={logo}
+                            boxSize='100px'
+                            objectFit='cover'
+                            src={logo}
+                            alt='Logo'
+                        />
+                    ))}
+                </SimpleGrid>
+            </Center>
         </Box>
-    )
+    );
 }
 
-
-/*export default function Brands() {
-    return (
-        <Box>
-            <Flex align="center" justify='space' direction="row">
-            <Grid templateColumns='repeat(5, 1fr)' w={'100%'} bgColor="red">
-            {
-                listOfLogos.map((logo)=>(
-                    <Image
-                        boxSize='100px'
-                        objectFit='cover'
-                        src={logo}
-                        alt='Dan Abramov'
-                    />                
-                ))
-            }
-            </Grid>
-            </Flex>
-        </Box>
-    )
-}*/
-
 //const listOfLogos = [logoImage, logoImage, logoImage, logoImage, logoImage, logoImage, logoImage, logoImage, logoImage, logoImage]
-const listOfLogos = [logoImage, logoImage, logoImage, logoImage, logoImage]
+

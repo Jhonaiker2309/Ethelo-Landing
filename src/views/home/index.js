@@ -2,8 +2,6 @@ import {
     Box,
     Button,
     Flex,
-    Image,
-    Spacer,
     Grid,
     GridItem,
     Text,

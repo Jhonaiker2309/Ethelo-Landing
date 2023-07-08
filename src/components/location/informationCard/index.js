@@ -1,5 +1,5 @@
 import React from 'react'
-import {Card, CardHeader, CardBody, Center, Heading, Text, Button} from "@chakra-ui/react"
+import {Card, CardHeader, CardBody, Center, Text, Button} from "@chakra-ui/react"
 
 export default function InformationCard() {
   return (

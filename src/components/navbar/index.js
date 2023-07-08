@@ -1,20 +1,13 @@
 import {
     Box,
     Flex,
-    Text,
-    Button,
     Stack,
-    Collapse,
     Link,
-    Popover,
-    PopoverTrigger,
-    PopoverContent,
     useColorModeValue,
-    useBreakpointValue,
-    useDisclosure,
     Image
 } from '@chakra-ui/react';
 import ethelo from "../../images/ethelo.png"
+import { SearchIcon } from "@chakra-ui/icons"
 
 export default function WithSubnavigation() {
 
@@ -40,11 +33,12 @@ export default function WithSubnavigation() {
                 </Flex>
 
                 <Stack
-                width={600}
+                width={800}
                     flex={{ base: 2, md: 0 }}
                     justify={'flex-end'}
                     direction={'row'}
-                    spacing={3}>
+                    spacing={5}>
+                    <Flex  align="center">
                     <Link
                         as={'a'}
                         width={100}
@@ -75,10 +69,13 @@ export default function WithSubnavigation() {
                         variant={'link'}
                         color={"#213555"}
                         style={{ textDecoration: "none" }}
+                        mr="5%"
                         href={'#'}>
                         Register
-                    </Link>                    
-                </Stack>
+                    </Link>   
+                    <SearchIcon boxSize={6} style={{cursor: "pointer"}}/>  
+                    </Flex>               
+                </Stack> 
             </Flex>
         </Box>
     );
