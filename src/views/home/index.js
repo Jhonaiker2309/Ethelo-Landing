@@ -28,20 +28,21 @@ const Home = () => {
                 backgroundPosition: 'center',                
             }}
         >
-            <Grid templateColumns='repeat(2, 1fr)' gap={240} mt="-50px">
+            <Grid templateColumns='repeat(2, 1fr)' gap={220} mt="-10px">
             <div></div>
                 <GridItem w="100%" pl={10}>
                 <Text
-                    fontSize={isLargerThan62 ? '5xl' : '4xl'}
+                    fontSize={'5xl'}
                     fontWeight={500}
+                    lineHeight={1.3}
                     mb="4"
                     align="left"
-                    color={"#213555"}
+                    color={"#003153"}
                 >
-                    Welcome to <br />  
+                        Welcome to <br style={{height: '0px'}} />  
                     Ethelo City Center
                 </Text>
-                    <Text pr="27" align="left">
+                    <Text pr="27" align="left" fontWeight={500}>
                     Reach Beyond the usual suspects and meaningfully involve <br/>
                     your community to make fair and inclusive decisions.  <br />
                     Help residents weigh priorities and evaluate trade-offs to <br />
@@ -52,12 +53,12 @@ const Home = () => {
                     <Button
                         w="160px"
                         mt={6}
-                        bgColor={"#FB5660"}
+                        bgColor={"#D42758"}
                         color="white"
                         variant="solid"
                         borderRadius="100px"
                         _hover={{
-                            bgColor : "#FB5660"
+                            bgColor:"#D42758"
                         }}
                         align="left"
                         size={isLargerThan62 ? 'lg' : 'md'}

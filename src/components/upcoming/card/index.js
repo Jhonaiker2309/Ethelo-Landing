@@ -23,13 +23,13 @@ const CardComponent = () => {
                     Survey
                 </Box>                
                 <Stack spacing='3' align="left" borderBottomRadius="10px" px="4%" pt="8%" pb="3%" style={{ boxShadow: "rgba(0, 0, 0, 0.16) 0px 1px 4px", borderColor: "#F5F5F5", border: " 0px 1px 1px 1px" }}>
-                    <Heading size='md' align="left" color={"#213555"}>Living room Sofa</Heading>
+                    <Heading size='md' align="left" color={"#003153"}>Living room Sofa</Heading>
                     <Text align="left">
                         This sofa is perfect for modern tropical spaces, baroque inspired
                         spaces, earthy toned spaces and for people who love a chic design with a
                         sprinkle of vintage design.
                     </Text>
-                    <Button width="30%" color={"#213555"} bgColor="white" border="1px" borderColor="213555" fontWeight={500} borderRadius="100px">View</Button>
+                    <Button width="30%" color={"#003153"} bgColor="white" border="1px" borderColor="213555" fontWeight={500} borderRadius="100px">View</Button>
                 </Stack>
             </CardBody>
         </Card>

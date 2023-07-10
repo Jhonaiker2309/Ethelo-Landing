@@ -8,7 +8,7 @@ import facebook from "../../images/facebook.svg";
 export default function FooterSection() {
   return (
     <div>
-      <Box bgColor="#1F8A70" px={40} py={12}>
+      <Box bgColor="#107A66" px={40} py={12}>
         <Text color="white" fontSize={["3xl", "4xl", "5xl"]} fontWeight={600} mb={3}>
           Why Ethelo?
         </Text>
@@ -54,10 +54,10 @@ export default function FooterSection() {
           </Text>
         </Center>
         <Button
-          color={"#213555"}
+          color={"#003153"}
           bgColor="white"
           w={["80%", "60%", "14%"]}
-          borderColor="213555"
+          borderColor="#003153"
           fontWeight={500}
           borderRadius="100px"
           py={[4, 5, 6]}
@@ -75,13 +75,13 @@ export default function FooterSection() {
             </GridItem>
             <GridItem colSpan={2} pl="15%">
               <Flex direction="row" align="center">
-                <Link width={100} fontSize={'md'} fontWeight={600} color={"#213555"}>
+                <Link width={100} fontSize={'md'} fontWeight={600} color={"#003153"}>
                   About us
                 </Link>
-                <Link width={100} fontSize={'md'} fontWeight={600} color={"#213555"}>
+                <Link width={100} fontSize={'md'} fontWeight={600} color={"#003153"}>
                   Privacy
                 </Link>
-                <Link width={100} fontSize={'md'} fontWeight={600} color={"#213555"}>
+                <Link width={100} fontSize={'md'} fontWeight={600} color={"#003153"}>
                   Disclaimer
                 </Link>
               </Flex>

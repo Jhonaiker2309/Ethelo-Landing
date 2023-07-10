@@ -4,15 +4,15 @@ import Card from '../../components/open/card'
 
 export default function Open() {
   return (
-      <Box mb={5} bgColor="#E3F4F4" py={10}>
+    <Box mb={5} bgColor="#F0F6F5" py={10}>
         <Center>
               <Text
                   fontSize={'4xl'}
                   fontWeight={500}
                   mb="4"
                   align="left"
-                  color={"#213555"}
-              >
+                  color={"#003153"}
+                >
                   Open Engagement
               </Text> 
             </Center>
@@ -24,7 +24,7 @@ export default function Open() {
               </SimpleGrid> 
             </Center>  
         <Center>
-              <Button color={"#213555"} bgColor="white" border="1px" borderColor="213555" fontWeight={500} borderRadius="100px" mt={10}>View all Open Engagements</Button>
+          <Button color={"#003153"} bgColor="white" border="1px" borderColor="213555" fontWeight={500} borderRadius="100px" mt={10}>View all Open Engagements</Button>
         </Center>
     </Box>
   )

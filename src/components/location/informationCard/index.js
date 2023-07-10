@@ -4,7 +4,7 @@ import {Card, CardHeader, CardBody, Center, Text, Button} from "@chakra-ui/react
 export default function InformationCard() {
   return (
     <Center>
-      <Card align='center' bgColor="#213555" color="white" w="65vw" h="42vh" borderRadius="15px" pb={10} mb={10}>
+      <Card align='center' bgColor="#003153" color="white" w="65vw" h="42vh" borderRadius="15px" pb={10} mb={10}>
           <CardHeader p={10} mb={0} mt="-20px">
             <Text fontSize='2xl' fontWeight={600}>MAKE CHANGE HAPPEN</Text>
           </CardHeader>
@@ -15,7 +15,7 @@ export default function InformationCard() {
               express your thoughts, ideas and opinions.</Text>
           </CardBody>
           <Center>
-            <Button color={"#213555"} bgColor="white" border="1px" borderColor="213555" fontWeight={500} borderRadius="100px" py={6} >View All Past Engagements</Button>
+          <Button color={"#003153"} bgColor="white" border="1px" borderColor="213555" fontWeight={500} borderRadius="100px" py={6} >View All Past Engagements</Button>
           </Center>
       </Card>
     </Center>

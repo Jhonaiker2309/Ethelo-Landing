@@ -15,9 +15,9 @@ export default function WithSubnavigation() {
         <Box>
             <Flex
                 bg={useColorModeValue('white', 'gray.800')}
-                color={"#213555"}
+                color={"#003153"}
                 minH={'60px'}
-                py={{ base: 2 }}
+                py={{ base: 7 }}
                 px={{ base: 4 }}
                 borderBottom={1}
                 borderStyle={'solid'}
@@ -29,7 +29,7 @@ export default function WithSubnavigation() {
                     display={{ base: 'flex', md: 'none' }}>
                 </Flex>
                 <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
-                    <Image src={ethelo} width="10%"/>
+                    <Image src={ethelo} width="14%"/>
                 </Flex>
 
                 <Stack
@@ -37,39 +37,41 @@ export default function WithSubnavigation() {
                     flex={{ base: 2, md: 0 }}
                     justify={'flex-end'}
                     direction={'row'}
-                    spacing={5}>
-                    <Flex  align="center">
+                    spacing={27}>
+                    <Flex align="center">
                     <Link
                         as={'a'}
-                        width={100}
-                        fontSize={'md'}
+                        width={140}
+                        fontSize={'lg'}
                         fontWeight={600}
                         variant={'link'}
-                        color={"#213555"}
+                        color={"#003153"}
+                        mr="6%"
                         style={{textDecoration: "none"}}
                         href={'#'}>
                         About us
                     </Link>
                     <Link
-                        width={100}
+                        width={140}
                         as={'a'}
-                        fontSize={'md'}
+                        fontSize={'lg'}
                         fontWeight={600}
                         variant={'link'}
-                        color={"#213555"}
+                        mr="6%"
+                        color={"#003153"}
                         style={{ textDecoration: "none" }}
                         href={'#'}>
                         Sign In
                     </Link>
                     <Link
-                        width={100}
+                        width={140}
                         as={'a'}
-                        fontSize={'md'}
+                        fontSize={'lg'}
                         fontWeight={600}
                         variant={'link'}
-                        color={"#213555"}
+                        color={"#003153"}
                         style={{ textDecoration: "none" }}
-                        mr="5%"
+                        mr="6%"
                         href={'#'}>
                         Register
                     </Link>   

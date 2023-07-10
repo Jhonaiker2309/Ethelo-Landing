@@ -21,7 +21,7 @@ const Location = () => {
         <InformationCard />
       </Box>
       <Center>
-        <Heading mt={180} mb={20} color={"#213555"} >Project Locations</Heading>
+        <Heading mt={180} mb={20} color={"#003153"} >Project Locations</Heading>
       </Center>
       <Flex direction="row" mb={10} justify="center">
           <Input placeholder='Search' w="30%" mr="3%"/>
