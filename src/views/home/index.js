@@ -7,7 +7,7 @@ import {
     Text,
     useMediaQuery,
 } from '@chakra-ui/react';
-import communityImage from "../../images/community.jpg"
+import communityImage from "../../images/nina.jpg"
 import React from 'react';
 
 const Home = () => {
@@ -40,7 +40,7 @@ const Home = () => {
                     color={"#003153"}
                 >
                         Welcome to <br style={{height: '0px'}} />  
-                    Ethelo City Center
+                    Smallville City Center
                 </Text>
                     <Text pr="27" align="left" fontWeight={500}>
                     Reach Beyond the usual suspects and meaningfully involve <br/>
