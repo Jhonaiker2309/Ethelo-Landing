@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/Ethelo-landing/static/css/main.2faa10f1.css",
+    "main.js": "/Ethelo-landing/static/js/main.d4369737.js",
+    "static/media/bike_marathon.jpg": "/Ethelo-landing/static/media/bike_marathon.f7f1b63182ba3c8d047b.jpg",
+    "static/media/icon_contract.svg": "/Ethelo-landing/static/media/icon_contract.f3b1f0f3eecb5a5fdbcbda4376e25cb5.svg",
+    "static/media/twitter.svg": "/Ethelo-landing/static/media/twitter.f8ed4341222ee2f28c4001f97ccec60b.svg",
+    "static/media/instagram.svg": "/Ethelo-landing/static/media/instagram.a63c9476fa83b33ffc32894544c5ccb7.svg",
+    "index.html": "/Ethelo-landing/index.html",
+    "static/media/facebook.svg": "/Ethelo-landing/static/media/facebook.adc70d4e840fc618a95a12bbca5a1538.svg",
+    "main.2faa10f1.css.map": "/Ethelo-landing/static/css/main.2faa10f1.css.map",
+    "main.d4369737.js.map": "/Ethelo-landing/static/js/main.d4369737.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2faa10f1.css",
+    "static/js/main.d4369737.js"
+  ]
+}
