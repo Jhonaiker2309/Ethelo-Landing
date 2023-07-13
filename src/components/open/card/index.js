@@ -1,17 +1,18 @@
 import React from 'react'
 import { Card, CardBody, Image, Stack, Heading, Text, Box, Button } from "@chakra-ui/react"
-import art_gallery from "../../../images/art_gallery.jpg"
 
-const CardComponent = () => {
+const CardComponent = ({ imageCard, name, description, linkAddress }) => {
+
     return (
-        <Card maxW='sm' p="0px" borderRadius="10px" style={{ boxShadow: "none" }}>
-            <CardBody p="0px" style={{position: "relative"}}>
+        <Card maxW='sm' py="0px" borderRadius="10px" style={{ boxShadow: "none" }}>
+            <CardBody p="0px" style={{ position: "relative" }} h="40%">
                 <Image
-                    src={art_gallery}
+                    src={imageCard}
                     alt='Art gallery'
                     size="cover"
                     width="100%"
                     borderTopRadius="10px"
+                    height="50%"
                 />
                 <Box bgColor="#C1ECE4" style={{
                     position: 'absolute',
@@ -23,18 +24,18 @@ const CardComponent = () => {
                 }}>
                     Survey
                 </Box>
-                <Stack mt='6' align="left" px="4%" py="3%">
-                    <Heading size='md' align="left" color={"#003153"}>Art gallery</Heading>
+                <Stack align="left" px="4%" py="0px" h="50%" flexDirection="column" borderBottomRadius="10px" pt="8%" pb="3%" style={{ boxShadow: "rgba(0, 0, 0, 0.16) 0px 1px 4px", borderColor: "#F5F5F5", border: " 0px 1px 1px 1px" }}>
+                    <Heading size='md' align="left" color={"#003153"}>{name}</Heading>
                     <Text align="left">
-                        Experience artistic perfection in our gallery: modern tropical, baroque-inspired, and earthy tones
-                        blend seamlessly with vintage chic. Immerse yourself in timeless allure and
-                        aesthetic harmony.
+                        {description}
                     </Text>
-                    <Button width="30%" color={"#003153"} bgColor="white" border="1px" borderColor="213555" fontWeight={500} borderRadius="100px">View</Button>
+                    <Button width="30%" mt="18%" color={"#003153"} bgColor="white" border="1px" borderColor="213555" fontWeight={500} borderRadius="100px" bottom="5px"
+                        onClick={() => window.open(linkAddress)}
+                    >View</Button>
                 </Stack>
             </CardBody>
         </Card>
     )
 }
 
-export default CardComponent
+export default CardComponent;

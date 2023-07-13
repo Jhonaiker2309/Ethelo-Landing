@@ -40,14 +40,10 @@ const Home = () => {
                         color={"#003153"}
                     >
                         Welcome to <br style={{ height: '0px' }} />
-                        Smallville City Center
+                        Cityville City Center
                     </Text>
                     <Text pr="27" align="center" color={"#003153"} fontWeight={500}>
-                        Reach Beyond the usual suspects and meaningfully involve <br />
-                        your community to make fair and inclusive decisions.  <br />
-                        Help residents weigh priorities and evaluate trade-offs to <br />
-                        reduce polarization and identify the option with broad <br />
-                        support
+                        Cityville invites residents to actively engage in shaping our collective future. <br /> We are committed to comprehensive and inclusive public participation, and <br /> we highly value your insights. Engage with us to share your perspectives, and voice <br />  your questions and ideas. Your involvement is vital, and we are eager to showcase <br />  how your input enriches Cityville's initiatives, policies, and projects.
                     </Text>
                     <Box align="left">
                         <Button
@@ -73,64 +69,3 @@ const Home = () => {
 };
 
 export default Home;
-
-/*
-const Home = () => {
-    const [isLargerThan62] = useMediaQuery('(min-width: 62em)');
-
-    return (
-        <Flex
-            align="center"
-            w="full"
-            px={isLargerThan62 ? '16' : '6'}
-            minHeight="92vh"
-            justifyContent="space-between"
-            flexDirection={isLargerThan62 ? 'row' : 'column'}
-            style={{
-                backgroundImage: `url(${city}`,
-                backgroundSize: 'cover',
-                backgroundRepeat: 'no-repeat',
-                backgroundPosition: 'center',                
-            }}
-        >
-
-                <Text
-                    fontSize={'5xl'}
-                    fontWeight={500}
-                    lineHeight={1.3}
-                    mb="4"
-                    align="left"
-                    color={"#003153"}
-                >
-                        Welcome to <br style={{height: '0px'}} />  
-                    Smallville City Center
-                </Text>
-                    <Text pr="27" align="left" fontWeight={500}>
-                    Reach Beyond the usual suspects and meaningfully involve <br/>
-                    your community to make fair and inclusive decisions.  <br />
-                    Help residents weigh priorities and evaluate trade-offs to <br />
-                    reduce polarization and identify the option with broad <br />
-                    support
-                </Text>
-                <Box align="left">
-                    <Button
-                        w="160px"
-                        mt={6}
-                        bgColor={"#D42758"}
-                        color="white"
-                        variant="solid"
-                        borderRadius="100px"
-                        _hover={{
-                            bgColor:"#D42758"
-                        }}
-                        align="left"
-                        size={isLargerThan62 ? 'lg' : 'md'}
-                        mb={isLargerThan62 ? '0' : '10'}>
-                        Register
-                    </Button>
-                </Box>
-        </Flex>
-    );
-};
-*/
-

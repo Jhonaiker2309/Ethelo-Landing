@@ -16,56 +16,41 @@ export default function FooterSection() {
           Why Engage?
         </Text>
         <SimpleGrid columns={{ sm: 1, lg: 3 }} spacing={[6, 10]}>
-          <Grid templateColumns='repeat(6, 1fr)'>
-            <GridItem colSpan={1}>
+          <Grid templateColumns='repeat(5, 1fr)'>
+            {/*<GridItem colSpan={1}>
               <Image src={footer_icon_1} w="70%" />
-            </GridItem>
+            </GridItem>*/}
             <GridItem colSpan={5}>
               <Box color="white" textAlign="left">
                 <Text fontSize={["xl", "2xl"]} fontWeight={600}>
-                  Save time
+                  Shape Your Future.
                 </Text>
                 <Text fontSize={["md", "lg"]} fontWeight={400}>
-                  Ethelo comes ready to let you <br />
-                  seamlessly engage broad groups <br />
-                  of stakeholders and quickly <br />
-                  understand their priorities
+                  Make your mark on our shared future by participating in key decisions that shape Cityville.
                 </Text>
               </Box>
             </GridItem>
           </Grid>
-          <Grid templateColumns='repeat(6, 1fr)'>
-            <GridItem colSpan={1}>
-              <Image src={footer_icon_2} w="70%" />
-            </GridItem>
+          <Grid templateColumns='repeat(5, 1fr)'>
             <GridItem colSpan={5}>
               <Box color="white" textAlign="left">
                 <Text fontSize={["xl", "2xl"]} fontWeight={600}>
-                  Find Agreement
+                  Your Voice Matters.
                 </Text>
                 <Text fontSize={["md", "lg"]} fontWeight={400}>
-                  Discover common ground in <br />
-                  contentious, polarizing situations <br />
-                  with Ethelo's patented scenario <br />
-                  analysis technology
+                  Engage in a transparent dialogue and voting process. Building a better Cityville together.
                 </Text>
               </Box>
             </GridItem>
           </Grid>
-          <Grid templateColumns='repeat(6, 1fr)'>
-            <GridItem colSpan={1}>
-              <Image src={footer_icon_3} w="70%" />
-            </GridItem>  
+          <Grid templateColumns='repeat(5, 1fr)'> 
             <GridItem colSpan={5}>        
             <Box color="white" textAlign="left">
               <Text fontSize={["xl", "2xl"]} fontWeight={600} textAlign="left">
-                Make better decisions
+                  The Power of Participation.
               </Text>
               <Text fontSize={["md", "lg"]} fontWeight={400}>
-                Create a well-articulated action <br />
-                plan based on input from a <br />
-                representative sample of your<br />
-                unique community
+                  Every opinion counts. Join us in to ensure that all voices are heard and valued as we collectively work to improve our town.
               </Text>
             </Box>
             </GridItem>
@@ -94,7 +79,7 @@ export default function FooterSection() {
           <Grid templateColumns='repeat(5, 1fr)' gap={10}>
             <GridItem colSpan={2}>
               <Flex align="center">
-                <Image src={ethelo} width="20%" />
+                <Text fontSize='30px' color='#003153' cursor="pointer">Cityville </Text>
               </Flex>
             </GridItem>
             <GridItem colSpan={2} pl="15%">
