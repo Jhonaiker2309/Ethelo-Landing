@@ -4,15 +4,15 @@ import { Card, CardBody, Image, Stack, Heading, Text, Box, Button } from "@chakr
 const CardComponent = ({ imageCard, name, description, linkAddress }) => {
 
     return (
-        <Card maxW='sm' py="0px" borderRadius="10px" style={{ boxShadow: "none" }}>
-            <CardBody p="0px" style={{ position: "relative" }} h="40%">
+        <Card maxW='sm' py="0px" borderRadius="10px" style={{ boxShadow: "none" }} h="450">
+            <CardBody p="0px"  style={{ position: "relative" }}>
                 <Image
                     src={imageCard}
-                    alt='Art gallery'
+                    alt='cityville'
                     size="cover"
                     width="100%"
                     borderTopRadius="10px"
-                    height="50%"
+                    height="200"
                 />
                 <Box bgColor="#C1ECE4" style={{
                     position: 'absolute',
@@ -24,12 +24,12 @@ const CardComponent = ({ imageCard, name, description, linkAddress }) => {
                 }}>
                     Survey
                 </Box>
-                <Stack align="left" px="4%" py="0px" h="50%" flexDirection="column" borderBottomRadius="10px" pt="8%" pb="3%" style={{ boxShadow: "rgba(0, 0, 0, 0.16) 0px 1px 4px", borderColor: "#F5F5F5", border: " 0px 1px 1px 1px" }}>
+                <Stack align="left" px="4%" py="0px" pt="8%" h="250" flexDirection="column" borderBottomRadius="10px"  style={{ boxShadow: "rgba(0, 0, 0, 0.16) 0px 1px 4px", borderColor: "#F5F5F5", border: " 0px 1px 1px 1px" }}>
                     <Heading size='md' align="left" color={"#003153"}>{name}</Heading>
                     <Text align="left">
                         {description}
                     </Text>
-                    <Button width="30%" mt="18%" color={"#003153"} bgColor="white" border="1px" borderColor="213555" fontWeight={500} borderRadius="100px" bottom="5px"
+                    <Button width="110px" position="absolute" color={"#003153"} bgColor="white" border="1px" borderColor="213555" fontWeight={500} borderRadius="100px" bottom="20px"
                         onClick={() => window.open(linkAddress)}
                     >View</Button>
                 </Stack>

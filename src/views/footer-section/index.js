@@ -75,16 +75,20 @@ export default function FooterSection() {
         </Button>
       </Box>
       <Box>
-        <Box h="13vh" py={5} px={20} w="100%">
-          <Grid templateColumns='repeat(5, 1fr)' gap={10}>
+        <Box py={4} align="center"  px={20} w="100%">
+          <Grid templateColumns='repeat(5, 1fr)' gap={10} py={0}>
             <GridItem colSpan={2}>
               <Flex align="center">
                 <Text fontSize='30px' color='#003153' cursor="pointer">Cityville </Text>
+                {/*<Box textAlign="left" mt="0.7%">
+                  © 2023, Ethelo | All Rights Reserved
+                </Box>*/}                
               </Flex>
             </GridItem>
-            <GridItem colSpan={2} pl="15%">
-              <Flex direction="row" align="center">
-                <Link width={100} fontSize={'md'} fontWeight={600} color={"#003153"}>
+            <GridItem colSpan={2} pl="15%" py={0} mt="1.6%">
+            <Flex align="center" justify="center">
+              <Flex direction="row" align="center" justify="center">
+                <Link width={100} fontSize={'md'} fontWeight={600} color={"#003153"} >
                   About us
                 </Link>
                 <Link width={100} fontSize={'md'} fontWeight={600} color={"#003153"}>
@@ -94,8 +98,9 @@ export default function FooterSection() {
                   Disclaimer
                 </Link>
               </Flex>
+              </Flex>
             </GridItem>
-            <GridItem colSpan={1}>
+            <GridItem colSpan={1} mt="4%">
               <Flex direction="row" justify="space-between" align="center" mt={-1}>
                 <Image src={facebook} w="12%" />
                 <Image src={twitter} w="12%" />
@@ -103,9 +108,7 @@ export default function FooterSection() {
               </Flex>
             </GridItem>
           </Grid>
-          <Box textAlign="left" mt="0.7%">
-            © 2023, Ethelo | All Rights Reserved
-          </Box>
+
         </Box>
       </Box>
     </div>

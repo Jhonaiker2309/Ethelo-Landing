@@ -9,13 +9,13 @@ export default function InformationCard() {
             <Text fontSize='2xl' fontWeight={600}>MAKE CHANGE HAPPEN</Text>
           </CardHeader>
           <CardBody mt="-40px">
-          <Text fontSize='lg' fontWeight={350}>Participating in social media discussions in a excelent way to share <br/>
+          <Text fontSize='lg' fontWeight={500}>Participating in social media discussions in a excelent way to share <br/>
             opinions, but it becomes ineffective for decision-making when we are <br />
             unaware of these conversations. Ethelo provides you with a platform to <br />
               express your thoughts, ideas and opinions.</Text>
           </CardBody>
           <Center>
-          <Button color={"#003153"} bgColor="white" border="1px" borderColor="213555" fontWeight={500}
+          <Button color={"#003153"} bgColor="white" border="1px" borderColor="213555" fontWeight={400}
            borderRadius="100px" py={6}
           onClick={() => window.open("https://6224498.fs1.hubspotusercontent-na1.net/hubfs/6224498/Final%20Report%20-%20Prince%20George%20Citizen%20Budget%202020%20(Nov%2016).pdf")}>
               View All Past Engagements
