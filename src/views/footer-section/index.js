@@ -13,7 +13,7 @@ export default function FooterSection() {
     <div>
       <Box bgColor="#107A66" px={40} py={12}>
         <Text color="white" fontSize={["3xl", "4xl", "5xl"]} fontWeight={600} mb={3}>
-          Why Ethelo?
+          Why Engage?
         </Text>
         <SimpleGrid columns={{ sm: 1, lg: 3 }} spacing={[6, 10]}>
           <Grid templateColumns='repeat(6, 1fr)'>

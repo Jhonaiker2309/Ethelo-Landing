@@ -13,7 +13,7 @@ export default function Open() {
                   align="left"
                   color={"#003153"}
                 >
-                  Open Engagement
+                  Open Engagements
               </Text> 
             </Center>
             <Center>

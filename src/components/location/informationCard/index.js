@@ -15,7 +15,11 @@ export default function InformationCard() {
               express your thoughts, ideas and opinions.</Text>
           </CardBody>
           <Center>
-          <Button color={"#003153"} bgColor="white" border="1px" borderColor="213555" fontWeight={500} borderRadius="100px" py={6} >View All Past Engagements</Button>
+          <Button color={"#003153"} bgColor="white" border="1px" borderColor="213555" fontWeight={500}
+           borderRadius="100px" py={6}
+          onClick={() => window.open("https://6224498.fs1.hubspotusercontent-na1.net/hubfs/6224498/Final%20Report%20-%20Prince%20George%20Citizen%20Budget%202020%20(Nov%2016).pdf")}>
+              View All Past Engagements
+          </Button>
           </Center>
       </Card>
     </Center>

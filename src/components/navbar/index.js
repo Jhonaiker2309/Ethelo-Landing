@@ -4,7 +4,7 @@ import {
     Stack,
     Link,
     useColorModeValue,
-    Image
+    Text
 } from '@chakra-ui/react';
 import ethelo from "../../images/ethelo.png"
 import { SearchIcon } from "@chakra-ui/icons"
@@ -29,7 +29,7 @@ export default function WithSubnavigation() {
                     display={{ base: 'flex', md: 'none' }}>
                 </Flex>
                 <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
-                    <Image src={ethelo} width="14%"/>
+                    <Text fontSize='30px' color='#003153' cursor="pointer">Cityville</Text>
                 </Flex>
 
                 <Stack

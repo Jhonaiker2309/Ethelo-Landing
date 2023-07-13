@@ -12,7 +12,7 @@ export default function Open() {
                     mb="4"
                     align="left"
                     color={"#003153"}>
-                    Upcoming Engagement
+                    Upcoming Engagements
                 </Text>
             </Center>
             <Center>
