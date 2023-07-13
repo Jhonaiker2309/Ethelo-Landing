@@ -1,20 +1,25 @@
 {
   "files": {
     "main.css": "/Ethelo-Landing/static/css/main.2faa10f1.css",
-    "main.js": "/Ethelo-Landing/static/js/main.9509c024.js",
+    "main.js": "/Ethelo-Landing/static/js/main.63670d6c.js",
+    "static/media/bike_marathon.jpg": "/Ethelo-Landing/static/media/bike_marathon.bfb294eb50771c44c5fc.jpg",
     "static/media/city.jpg": "/Ethelo-Landing/static/media/city.b42f0ade6bda9f359dd4.jpg",
-    "static/media/art_gallery.jpg": "/Ethelo-Landing/static/media/art_gallery.1034440be24b634b2c0f.jpg",
-    "static/media/bike_marathon.jpg": "/Ethelo-Landing/static/media/bike_marathon.f7f1b63182ba3c8d047b.jpg",
+    "static/media/city_budget.jpg": "/Ethelo-Landing/static/media/city_budget.e15964f50022bace62d6.jpg",
+    "static/media/people.jpg": "/Ethelo-Landing/static/media/people.64a385583066fecce707.jpg",
+    "static/media/taxes.jpg": "/Ethelo-Landing/static/media/taxes.291e521aae25f9aa092d.jpg",
+    "static/media/climate.jpg": "/Ethelo-Landing/static/media/climate.5de1cc4a0444fc2d08f1.jpg",
+    "static/media/traffic.jpg": "/Ethelo-Landing/static/media/traffic.e74edd4449a8635370a9.jpg",
+    "static/media/household_survey.jpg": "/Ethelo-Landing/static/media/household_survey.f2c9dcf1e12492dc007a.jpg",
     "static/media/icon_contract.svg": "/Ethelo-Landing/static/media/icon_contract.f3b1f0f3eecb5a5fdbcbda4376e25cb5.svg",
     "static/media/twitter.svg": "/Ethelo-Landing/static/media/twitter.f8ed4341222ee2f28c4001f97ccec60b.svg",
     "static/media/instagram.svg": "/Ethelo-Landing/static/media/instagram.a63c9476fa83b33ffc32894544c5ccb7.svg",
     "index.html": "/Ethelo-Landing/index.html",
     "static/media/facebook.svg": "/Ethelo-Landing/static/media/facebook.adc70d4e840fc618a95a12bbca5a1538.svg",
     "main.2faa10f1.css.map": "/Ethelo-Landing/static/css/main.2faa10f1.css.map",
-    "main.9509c024.js.map": "/Ethelo-Landing/static/js/main.9509c024.js.map"
+    "main.63670d6c.js.map": "/Ethelo-Landing/static/js/main.63670d6c.js.map"
   },
   "entrypoints": [
     "static/css/main.2faa10f1.css",
-    "static/js/main.9509c024.js"
+    "static/js/main.63670d6c.js"
   ]
 }
