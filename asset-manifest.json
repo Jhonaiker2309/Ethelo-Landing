@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/Ethelo-Landing/static/css/main.2faa10f1.css",
-    "main.js": "/Ethelo-Landing/static/js/main.2bed4803.js",
+    "main.js": "/Ethelo-Landing/static/js/main.9509c024.js",
+    "static/media/city.jpg": "/Ethelo-Landing/static/media/city.b42f0ade6bda9f359dd4.jpg",
     "static/media/art_gallery.jpg": "/Ethelo-Landing/static/media/art_gallery.1034440be24b634b2c0f.jpg",
-    "static/media/nina.jpg": "/Ethelo-Landing/static/media/nina.4bde3885d652d9f04ed3.jpg",
     "static/media/bike_marathon.jpg": "/Ethelo-Landing/static/media/bike_marathon.f7f1b63182ba3c8d047b.jpg",
     "static/media/icon_contract.svg": "/Ethelo-Landing/static/media/icon_contract.f3b1f0f3eecb5a5fdbcbda4376e25cb5.svg",
     "static/media/twitter.svg": "/Ethelo-Landing/static/media/twitter.f8ed4341222ee2f28c4001f97ccec60b.svg",
@@ -11,10 +11,10 @@
     "index.html": "/Ethelo-Landing/index.html",
     "static/media/facebook.svg": "/Ethelo-Landing/static/media/facebook.adc70d4e840fc618a95a12bbca5a1538.svg",
     "main.2faa10f1.css.map": "/Ethelo-Landing/static/css/main.2faa10f1.css.map",
-    "main.2bed4803.js.map": "/Ethelo-Landing/static/js/main.2bed4803.js.map"
+    "main.9509c024.js.map": "/Ethelo-Landing/static/js/main.9509c024.js.map"
   },
   "entrypoints": [
     "static/css/main.2faa10f1.css",
-    "static/js/main.2bed4803.js"
+    "static/js/main.9509c024.js"
   ]
 }
