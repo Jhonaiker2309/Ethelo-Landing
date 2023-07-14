@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Ethelo-Landing/static/css/main.2faa10f1.css",
-    "main.js": "/Ethelo-Landing/static/js/main.fac8bee1.js",
+    "main.js": "/Ethelo-Landing/static/js/main.5f28ab2d.js",
     "static/media/people_min.jpg": "/Ethelo-Landing/static/media/people_min.27c422010776d29702ce.jpg",
     "static/media/city_min.jpg": "/Ethelo-Landing/static/media/city_min.286a1d463edbc9f8d80c.jpg",
     "static/media/taxes_min.jpg": "/Ethelo-Landing/static/media/taxes_min.76c3a204f64c8cd56f98.jpg",
@@ -10,16 +10,16 @@
     "static/media/climate_min.jpg": "/Ethelo-Landing/static/media/climate_min.f50dbae2c706660eae58.jpg",
     "static/media/traffic_min.jpg": "/Ethelo-Landing/static/media/traffic_min.89e2d714136d5897132b.jpg",
     "static/media/household_survey_min.jpg": "/Ethelo-Landing/static/media/household_survey_min.8c6f820bb717dfb740c6.jpg",
-    "static/media/icon_contract.svg": "/Ethelo-Landing/static/media/icon_contract.f3b1f0f3eecb5a5fdbcbda4376e25cb5.svg",
+    "static/media/logo_ciudad.png": "/Ethelo-Landing/static/media/logo_ciudad.92d900c21a73b1cf26b9.png",
     "static/media/twitter.svg": "/Ethelo-Landing/static/media/twitter.f8ed4341222ee2f28c4001f97ccec60b.svg",
     "static/media/instagram.svg": "/Ethelo-Landing/static/media/instagram.a63c9476fa83b33ffc32894544c5ccb7.svg",
     "index.html": "/Ethelo-Landing/index.html",
     "static/media/facebook.svg": "/Ethelo-Landing/static/media/facebook.adc70d4e840fc618a95a12bbca5a1538.svg",
     "main.2faa10f1.css.map": "/Ethelo-Landing/static/css/main.2faa10f1.css.map",
-    "main.fac8bee1.js.map": "/Ethelo-Landing/static/js/main.fac8bee1.js.map"
+    "main.5f28ab2d.js.map": "/Ethelo-Landing/static/js/main.5f28ab2d.js.map"
   },
   "entrypoints": [
     "static/css/main.2faa10f1.css",
-    "static/js/main.fac8bee1.js"
+    "static/js/main.5f28ab2d.js"
   ]
 }
