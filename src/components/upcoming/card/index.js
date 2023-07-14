@@ -1,7 +1,7 @@
 import React from 'react'
 import { Card, CardBody, Image, Stack, Heading, Text, Box, Button } from "@chakra-ui/react"
 
-const CardComponent = ({ imageCard, name, description, linkAddress }) => {
+const CardComponent = ({ imageCard, name, description, buttonText }) => {
 
     return (
         <Card maxW='sm' py="0px" borderRadius="10px" style={{ boxShadow: "none" }} h="450">
@@ -29,9 +29,9 @@ const CardComponent = ({ imageCard, name, description, linkAddress }) => {
                     <Text align="left">
                         {description}
                     </Text>
-                    <Button width="110px" position="absolute" color={"#003153"} bgColor="white" border="1px" borderColor="213555" fontWeight={500} borderRadius="100px" bottom="20px"
-                        onClick={() => window.open(linkAddress)}
-                    >View</Button>
+                    <Button width="35%" fontSize={"100%"} position="absolute" color={"#003153"} bgColor="white" border="1px" borderColor="213555" fontWeight={500} borderRadius="100px" bottom="20px">
+                        {buttonText}
+                    </Button>                     
                 </Stack>
             </CardBody>
         </Card>

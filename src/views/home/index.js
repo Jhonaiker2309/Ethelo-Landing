@@ -10,7 +10,7 @@ import {
     CardBody,
     Text,
     border} from "@chakra-ui/react"
-import city from "../../images/city.jpg"
+import city from "../../images/city_min.jpg"
 import React from 'react';
 import { color } from "framer-motion";
 
@@ -43,7 +43,7 @@ const Home = () => {
                         Cityville City Center
                     </Text>
                     <Text pr="27" align="center" color={"#003153"} fontWeight={500}>
-                        Cityville invites residents to actively engage in shaping our collective future. <br /> We are committed to comprehensive and inclusive public participation, and <br /> we highly value your insights. Engage with us to share your perspectives, and voice <br />  your questions and ideas. Your involvement is vital, and we are eager to showcase <br />  how your input enriches Cityville's initiatives, policies, and projects.
+                        Cityville invites residents to actively engage in shaping our collective future.<br /> We are committed to comprehensive and inclusive public participation, <br />and we highly value your insights. Engage with us now to share your perspectives and ensure <br />your voice is heard. Your input will enrich Cityville's initiatives, policies and projects.
                     </Text>
                     <Box align="left">
                         <Button

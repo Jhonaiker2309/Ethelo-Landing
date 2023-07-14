@@ -1,24 +1,19 @@
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from "./components/navbar";
-import Home from "./views/home";
-import Brands from "./views/brands";
-import Open from "./views/open";
-import Upcoming from "./views/upcoming";
-import Location from "./views/location";
-import Map from "./views/map";
-import FooterSection from "./views/footer-section";
+import PrincipalPage from './views/principal-page';
+import Engagements from './views/engagements';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
+      <Router>    
       <Navbar />
-      <Home />
-      {/*<Brands />*/}
-      <Open />
-      <Upcoming />
-      <Location />
-      <Map />
-      <FooterSection />
+        <Routes>
+          <Route path="/engagements" element={<Engagements />} />
+          <Route path="*" element={<PrincipalPage />} />
+        </Routes>
+      </Router>     
     </div>
   );
 }

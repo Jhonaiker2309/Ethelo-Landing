@@ -1,6 +1,6 @@
 import { Box, Heading, Center, Input, Flex } from "@chakra-ui/react";
 import InformationCard from "../../components/location/informationCard";
-import bike_marathon from "../../images/bike_marathon.jpg"
+import bike_marathon from "../../images/bike_marathon_min.jpg"
 import "./index.css";
 
 const Location = () => {

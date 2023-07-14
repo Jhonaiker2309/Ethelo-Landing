@@ -4,9 +4,6 @@ import ethelo from "../../images/ethelo.png";
 import twitter from "../../images/twitter.svg";
 import instagram from "../../images/instagram.svg";
 import facebook from "../../images/facebook.svg";
-import footer_icon_1 from "../../images/icon_time.png";
-import footer_icon_2 from "../../images/icon_contract.svg";
-import footer_icon_3 from "../../images/icon_win.png";
 
 export default function FooterSection() {
   return (
@@ -31,18 +28,6 @@ export default function FooterSection() {
               </Box>
             </GridItem>
           </Grid>
-          <Grid templateColumns='repeat(5, 1fr)'>
-            <GridItem colSpan={5}>
-              <Box color="white" textAlign="left">
-                <Text fontSize={["xl", "2xl"]} fontWeight={600}>
-                  Your Voice Matters.
-                </Text>
-                <Text fontSize={["md", "lg"]} fontWeight={400}>
-                  Engage in a transparent dialogue and voting process. Building a better Cityville together.
-                </Text>
-              </Box>
-            </GridItem>
-          </Grid>
           <Grid templateColumns='repeat(5, 1fr)'> 
             <GridItem colSpan={5}>        
             <Box color="white" textAlign="left">
@@ -55,6 +40,18 @@ export default function FooterSection() {
             </Box>
             </GridItem>
           </Grid>
+          <Grid templateColumns='repeat(5, 1fr)'>
+            <GridItem colSpan={5}>
+              <Box color="white" textAlign="left">
+                <Text fontSize={["xl", "2xl"]} fontWeight={600}>
+                  Your Voice Matters.
+                </Text>
+                <Text fontSize={["md", "lg"]} fontWeight={400}>
+                  Engage in a transparent dialogue and voting process. Building a better Cityville together.
+                </Text>
+              </Box>
+            </GridItem>
+          </Grid>          
         </SimpleGrid>
         <Center borderTop="2px" borderColor="white" mt={10}>
           <Text fontSize={["3xl", "4xl", "5xl"]} fontWeight={600} color="white" mt={20} mb={10}>
@@ -79,7 +76,7 @@ export default function FooterSection() {
           <Grid templateColumns='repeat(5, 1fr)' gap={10} py={0}>
             <GridItem colSpan={2}>
               <Flex align="center">
-                <Text fontSize='30px' color='#003153' cursor="pointer">Cityville </Text>
+                <Image src={ethelo} w="30%"/>
                 {/*<Box textAlign="left" mt="0.7%">
                   © 2023, Ethelo | All Rights Reserved
                 </Box>*/}                
@@ -88,14 +85,14 @@ export default function FooterSection() {
             <GridItem colSpan={2} pl="15%" py={0} mt="1.6%">
             <Flex align="center" justify="center">
               <Flex direction="row" align="center" justify="center">
-                <Link width={100} fontSize={'md'} fontWeight={600} color={"#003153"} >
+                  <Link width={100} fontSize={'md'} fontWeight={600} color={"#003153"} href="https://ethelo.com/about/#:~:text=Ethelo%20is%20the%20ancient%20Greek,can%20realize%20their%20intention%20together">
                   About us
                 </Link>
-                <Link width={100} fontSize={'md'} fontWeight={600} color={"#003153"}>
+                  <Link width={100} fontSize={'md'} fontWeight={600} color={"#003153"} href='https://ethelo.com/privacy-policy/'>
                   Privacy
                 </Link>
-                <Link width={100} fontSize={'md'} fontWeight={600} color={"#003153"}>
-                  Disclaimer
+                  <Link width={100} fontSize={'md'} fontWeight={600} color={"#003153"} href="https://ethelo.com/terms-of-use/">
+                  Terms of Use
                 </Link>
               </Flex>
               </Flex>

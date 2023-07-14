@@ -3,12 +3,14 @@ import {
     Flex,
     Link,
     useColorModeValue,
-    Text,
+    Image,
     InputLeftElement,
     InputGroup,
     Input
 } from '@chakra-ui/react';
+import {Link as RouterLink} from "react-router-dom"
 import { SearchIcon } from "@chakra-ui/icons"
+import logo_ciudad from "../../images/logo_ciudad.png"
 
 export default function WithSubnavigation() {
     return (
@@ -30,53 +32,54 @@ export default function WithSubnavigation() {
                     display={{ base: 'flex', md: 'none' }}
                 ></Flex>
                 <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
-                    <Text fontSize='30px' color='#003153' cursor="pointer">Cityville</Text>
+                    <Image src={logo_ciudad} w="100px"/>
                 </Flex>
                 <Flex align="center" justify="space-between" pl="10%">
                     <Link
-                        as={'a'}
+                        as={RouterLink}
+                        to="/"
+                        _hover={{textDecoration:"none"}}
                         width={100}
                         fontSize={'md'}
                         fontWeight={500}
-                        variant={'link'}
                         color={"#003153"}
                         style={{ textDecoration: "none" }}
                     >
                         Home
                     </Link>
                     <Link
-                        as={'a'}
+                        as={RouterLink}
+                        to="/"
+                        _hover={{ textDecoration: "none" }}
                         width={120}
                         fontSize={'md'}
                         fontWeight={500}
-                        variant={'link'}
                         color={"#003153"}
                         style={{ textDecoration: "none" }}
-                        href={'#'}
                     >
                         City Website
                     </Link>
                     <Link
                         width={120}
-                        as={'a'}
+                        as={RouterLink}
+                        to="/"
+                        _hover={{ textDecoration: "none" }}
                         fontSize={'md'}
                         fontWeight={500}
-                        variant={'link'}
                         color={"#003153"}
                         style={{ textDecoration: "none" }}
-                        href={'#'}
                     >
                         Why Engage?
                     </Link>
                     <Link
                         width={100}
-                        as={'a'}
+                        as={RouterLink}
+                        to="/"
+                        _hover={{ textDecoration: "none" }}
                         fontSize={'md'}
                         fontWeight={500}
-                        variant={'link'}
                         color={"#003153"}
                         style={{ textDecoration: "none" }}
-                        href={'#'}
                     >
                         Projects
                     </Link>
@@ -93,25 +96,25 @@ export default function WithSubnavigation() {
                     </InputGroup>
                     <Link
                         width={100}
-                        as={'a'}
+                        as={RouterLink}
+                        to="/"
+                        _hover={{ textDecoration: "none" }}
                         fontSize={'md'}
                         fontWeight={500}
-                        variant={'link'}
                         color={"#003153"}
                         style={{ textDecoration: "none" }}
-                        href={'#'}
                     >
                         Sign In
                     </Link>
                     <Link
                         width={100}
-                        as={'a'}
+                        as={RouterLink}
+                        to="/"
+                        _hover={{ textDecoration: "none" }}
                         fontSize={'md'}
                         fontWeight={500}
-                        variant={'link'}
                         color={"#003153"}
                         style={{ textDecoration: "none" }}
-                        href={'#'}
                     >
                         Register
                     </Link>

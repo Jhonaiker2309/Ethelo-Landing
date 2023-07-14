@@ -1,5 +1,6 @@
 import React from 'react'
-import {Card, CardHeader, CardBody, Center, Text, Button} from "@chakra-ui/react"
+import {Card, CardHeader, CardBody, Center, Text, Button, Link} from "@chakra-ui/react"
+import {Link as RouterLink} from "react-router-dom"
 
 export default function InformationCard() {
   return (
@@ -16,9 +17,8 @@ export default function InformationCard() {
           </CardBody>
           <Center>
           <Button color={"#003153"} bgColor="white" border="1px" borderColor="213555" fontWeight={400}
-           borderRadius="100px" py={6}
-          onClick={() => window.open("https://6224498.fs1.hubspotusercontent-na1.net/hubfs/6224498/Final%20Report%20-%20Prince%20George%20Citizen%20Budget%202020%20(Nov%2016).pdf")}>
-              View All Past Engagements
+           borderRadius="100px" py={6}>
+            <Link as={RouterLink} to="/engagements" _hover={{textDecoration: "none"}}>View All Past Engagements</Link>
           </Button>
           </Center>
       </Card>
