@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Ethelo-Landing/static/css/main.2faa10f1.css",
-    "main.js": "/Ethelo-Landing/static/js/main.62cf8b46.js",
+    "main.js": "/Ethelo-Landing/static/js/main.26be5d2d.js",
     "static/media/taxes_min.jpg": "/Ethelo-Landing/static/media/taxes_min.a164c734be4159b6b718.jpg",
     "static/media/people_min.jpg": "/Ethelo-Landing/static/media/people_min.27c422010776d29702ce.jpg",
     "static/media/city_min.jpg": "/Ethelo-Landing/static/media/city_min.286a1d463edbc9f8d80c.jpg",
@@ -15,10 +15,10 @@
     "index.html": "/Ethelo-Landing/index.html",
     "static/media/facebook.svg": "/Ethelo-Landing/static/media/facebook.adc70d4e840fc618a95a12bbca5a1538.svg",
     "main.2faa10f1.css.map": "/Ethelo-Landing/static/css/main.2faa10f1.css.map",
-    "main.62cf8b46.js.map": "/Ethelo-Landing/static/js/main.62cf8b46.js.map"
+    "main.26be5d2d.js.map": "/Ethelo-Landing/static/js/main.26be5d2d.js.map"
   },
   "entrypoints": [
     "static/css/main.2faa10f1.css",
-    "static/js/main.62cf8b46.js"
+    "static/js/main.26be5d2d.js"
   ]
 }
