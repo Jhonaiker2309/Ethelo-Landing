@@ -1,25 +1,24 @@
 {
   "files": {
     "main.css": "/Ethelo-Landing/static/css/main.2faa10f1.css",
-    "main.js": "/Ethelo-Landing/static/js/main.b570254c.js",
+    "main.js": "/Ethelo-Landing/static/js/main.62cf8b46.js",
+    "static/media/taxes_min.jpg": "/Ethelo-Landing/static/media/taxes_min.a164c734be4159b6b718.jpg",
     "static/media/people_min.jpg": "/Ethelo-Landing/static/media/people_min.27c422010776d29702ce.jpg",
     "static/media/city_min.jpg": "/Ethelo-Landing/static/media/city_min.286a1d463edbc9f8d80c.jpg",
-    "static/media/taxes_min.jpg": "/Ethelo-Landing/static/media/taxes_min.76c3a204f64c8cd56f98.jpg",
     "static/media/bike_marathon_min.jpg": "/Ethelo-Landing/static/media/bike_marathon_min.685dcd7229e2be5903d6.jpg",
     "static/media/city_budget_min.jpg": "/Ethelo-Landing/static/media/city_budget_min.cd1e1c426dabb95146e5.jpg",
     "static/media/climate_min.jpg": "/Ethelo-Landing/static/media/climate_min.f50dbae2c706660eae58.jpg",
     "static/media/traffic_min.jpg": "/Ethelo-Landing/static/media/traffic_min.89e2d714136d5897132b.jpg",
     "static/media/household_survey_min.jpg": "/Ethelo-Landing/static/media/household_survey_min.8c6f820bb717dfb740c6.jpg",
-    "static/media/logo_ciudad.png": "/Ethelo-Landing/static/media/logo_ciudad.92d900c21a73b1cf26b9.png",
     "static/media/twitter.svg": "/Ethelo-Landing/static/media/twitter.f8ed4341222ee2f28c4001f97ccec60b.svg",
     "static/media/instagram.svg": "/Ethelo-Landing/static/media/instagram.a63c9476fa83b33ffc32894544c5ccb7.svg",
     "index.html": "/Ethelo-Landing/index.html",
     "static/media/facebook.svg": "/Ethelo-Landing/static/media/facebook.adc70d4e840fc618a95a12bbca5a1538.svg",
     "main.2faa10f1.css.map": "/Ethelo-Landing/static/css/main.2faa10f1.css.map",
-    "main.b570254c.js.map": "/Ethelo-Landing/static/js/main.b570254c.js.map"
+    "main.62cf8b46.js.map": "/Ethelo-Landing/static/js/main.62cf8b46.js.map"
   },
   "entrypoints": [
     "static/css/main.2faa10f1.css",
-    "static/js/main.b570254c.js"
+    "static/js/main.62cf8b46.js"
   ]
 }
