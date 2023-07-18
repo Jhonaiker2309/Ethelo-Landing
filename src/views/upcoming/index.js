@@ -22,7 +22,7 @@ export default function Upcoming() {
             <Center>
                 <SimpleGrid columns={{ sm: 1, md: 2, lg: 3 }} spacing={5} mb={5} mx={"11%"}>
                     {cardList.map((currentCard) => (
-                        <Card imageCard={currentCard.image} name={currentCard.name} description={currentCard.description} buttonText={currentCard.buttonText} />
+                        <Card imageCard={currentCard.image} name={currentCard.name} description={currentCard.description} buttonText={currentCard.buttonText} type={currentCard.type}/>
                     ))}
                 </SimpleGrid>
             </Center>
@@ -37,19 +37,22 @@ const cardList = [
         name: "Climate Planning",
         description: "Vote on how you'd like the city to reduce 20,000 tonnes of GHG",
         image: climate,
-        buttonText: "March 2024"
+        buttonText: "March 2024",
+        type: "Budget"
     },
     {
         name: "Traffic Survey",
         description: 'Share your perspective on enhancing active transportation',
         image: traffic,
-        buttonText: "June 2024"
+        buttonText: "June 2024",
+        type: "Survey"
     },
     {
         name: "Community Dialogue",
         description: 'Join the conversation and contribute to meaningful discussions',
         image: people,
-        buttonText: "August 2024"
+        buttonText: "August 2024",
+        type: "Survey",
     }
 ]
 

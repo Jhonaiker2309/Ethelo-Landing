@@ -31,11 +31,7 @@ const CardComponent = ({ imageCard, name, description, linkAddress, type, color 
                     </Text>
                     <Button width="28%" fontSize={"90%"} position="absolute" color={"#003153"} bgColor="white" border="1px" borderColor="213555" fontWeight={500} borderRadius="100px" bottom="20px"
                         onClick={() => window.open(linkAddress)}
-                    >View</Button>
-                    <Button width="28%" fontSize={"90%"} position="absolute" color={"#003153"} bgColor="white" border="1px" borderColor="213555" fontWeight={500} borderRadius="100px" bottom="20px" left="35%"
-                    >Report</Button>
-                    <Button width="28%" fontSize={"80%"} position="absolute" color={"#003153"} bgColor="white" border="1px" borderColor="213555" fontWeight={500} borderRadius="100px" bottom="20px" left="67%"
-                    >Case Study</Button>                                                            
+                    >View</Button>                                                            
                 </Stack>
             </CardBody>
         </Card>

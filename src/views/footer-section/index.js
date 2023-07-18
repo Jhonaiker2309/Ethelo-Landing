@@ -18,7 +18,7 @@ export default function FooterSection() {
               <Image src={footer_icon_1} w="70%" />
             </GridItem>*/}
             <GridItem colSpan={5}>
-              <Box color="white" textAlign="left">
+              <Box color="white" textAlign={{ base: 'center', md: "left" }}>
                 <Text fontSize={["xl", "2xl"]} fontWeight={600}>
                   Shape Your Future.
                 </Text>
@@ -30,9 +30,9 @@ export default function FooterSection() {
           </Grid>
           <Grid templateColumns='repeat(5, 1fr)'> 
             <GridItem colSpan={5}>        
-            <Box color="white" textAlign="left">
-              <Text fontSize={["xl", "2xl"]} fontWeight={600} textAlign="left">
-                  The Power of Participation.
+            <Box color="white" textAlign={{ base: 'center', md: "left" }}>
+              <Text fontSize={["xl", "2xl"]} fontWeight={600} >
+                The Power of Participation.
               </Text>
               <Text fontSize={["md", "lg"]} fontWeight={400}>
                   Every opinion counts. Join us in to ensure that all voices are heard and valued as we collectively work to improve our town.
@@ -42,7 +42,7 @@ export default function FooterSection() {
           </Grid>
           <Grid templateColumns='repeat(5, 1fr)'>
             <GridItem colSpan={5}>
-              <Box color="white" textAlign="left">
+              <Box color="white" textAlign={{base: 'center', md:"left"}}>
                 <Text fontSize={["xl", "2xl"]} fontWeight={600}>
                   Your Voice Matters.
                 </Text>
@@ -72,40 +72,38 @@ export default function FooterSection() {
         </Button>
       </Box>
       <Box>
-        <Box py={4} align="center"  px={20} w="100%">
-          <Grid templateColumns='repeat(5, 1fr)' gap={10} py={0}>
+        <Box py={4} align="center"  px={10} w="100%">
+          <Grid templateColumns={{ base: 'repeat(1, 1fr)', md: 'repeat(5, 1fr)'}} rowGap={{base: 5, md:10}} py={{base: 4,md: 0}}>
             <GridItem colSpan={2}>
-              <Flex align="center">
-                <Image src={ethelo} w="30%"/>
-                {/*<Box textAlign="left" mt="0.7%">
-                  © 2023, Ethelo | All Rights Reserved
-                </Box>*/}                
+              <Flex align="center" justifyContent={{base:"center", md:"left"}} h="100%" w="100%" textAlign="center">
+                <Image src={ethelo} w={{base: "200px", md:"100px"}}/>             
               </Flex>
             </GridItem>
-            <GridItem colSpan={2} pl="15%" py={0} mt="1.6%">
+            <GridItem colSpan={2 } pl={{base: 0, md: 10}} py={0}  mt={{base: 0, md: "1.6%"}}>
             <Flex align="center" justify="center">
-              <Flex direction="row" align="center" justify="center">
-                  <Link width={100} fontSize={'md'} fontWeight={600} color={"#003153"} href="https://ethelo.com/about/#:~:text=Ethelo%20is%20the%20ancient%20Greek,can%20realize%20their%20intention%20together">
+              <Flex direction="row" align="center" justify="center" pr={{base: 0, md: 10}}>
+                  <Link width={{base: "100px", md: "100px"}} fontSize={{base:"lg",md:'md'}} fontWeight={600} color={"#003153"} href="https://ethelo.com/about/#:~:text=Ethelo%20is%20the%20ancient%20Greek,can%20realize%20their%20intention%20together">
                   About us
                 </Link>
-                  <Link width={100} fontSize={'md'} fontWeight={600} color={"#003153"} href='https://ethelo.com/privacy-policy/'>
+                  <Link width={{ base: "100px", md: "100px" }} fontSize={{ base: "lg", md: 'md' }} fontWeight={600} color={"#003153"} href='https://ethelo.com/privacy-policy/'>
                   Privacy
                 </Link>
-                  <Link width={100} fontSize={'md'} fontWeight={600} color={"#003153"} href="https://ethelo.com/terms-of-use/">
+                  <Link width={{ base: "120px", md: "100px" }} fontSize={{ base: "lg", md: 'md' }} fontWeight={600} color={"#003153"} href="https://ethelo.com/terms-of-use/">
                   Terms of Use
                 </Link>
               </Flex>
               </Flex>
             </GridItem>
-            <GridItem colSpan={1} mt="4%">
-              <Flex direction="row" justify="space-between" align="center" mt={-1}>
-                <Image src={facebook} w="12%" />
-                <Image src={twitter} w="12%" />
-                <Image src={instagram} w="12%" />
+            <GridItem colSpan={1} mt={{ base: "2%", md: "4%" }}>
+            <Center>
+              <Flex direction="row" justify="space-between" align="center" gap={{base:8, md:2}} mt={-1}>
+                <Image src={facebook} w={{base: "40px", md:"30px"}} />
+                <Image src={twitter} w={{ base: "40px", md: "30px" }} />
+                <Image src={instagram} w={{ base: "40px", md: "30px" }} />
               </Flex>
+            </Center>
             </GridItem>
           </Grid>
-
         </Box>
       </Box>
     </div>
