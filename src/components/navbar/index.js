@@ -2,16 +2,10 @@ import {
     Box,
     Flex,
     Link,
-    useColorModeValue,
     IconButton,
-    Collapse,
     Stack,
     Text,
-    InputLeftElement,
-    InputGroup,
-    Input,
     useDisclosure,
-    Icon,
     useMediaQuery
 } from '@chakra-ui/react';
 import {Link as RouterLink} from "react-router-dom"
@@ -19,7 +13,6 @@ import {
     SearchIcon, 
     HamburgerIcon,
     CloseIcon,
-    ChevronDownIcon,
     } from "@chakra-ui/icons"
 import { useEffect } from 'react';
 
@@ -27,9 +20,28 @@ export default function WithSubnavigation() {
     const { isOpen, onToggle } = useDisclosure();
     const [isMdOrLarger] = useMediaQuery('(min-width: 768px)'); // "md" corresponde a 768px
 
+    // Bloquear el desplazamiento
+    function disableScroll() {
+        document.body.style.overflow = 'hidden';
+    }
+
+    // Desbloquear el desplazamiento
+    function enableScroll() {
+        document.body.style.overflow = '';
+    }
+
     useEffect(()=> {
         onToggle(false)
+    // eslint-disable-next-line
     },[isMdOrLarger])
+
+    useEffect(() => {
+        if (isOpen && !isMdOrLarger) {
+            disableScroll();
+        } else {
+            enableScroll();
+        }
+    }, [isOpen, isMdOrLarger]);
 
     return (
         <Box w="100%" position="fixed" style={{zIndex: 50}}
@@ -47,7 +59,7 @@ export default function WithSubnavigation() {
                 borderColor="gray.100"
                 align={'center'}
             >
-                <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
+                <Flex flex={{ base: 1 }} justify={"start"}>
                     <Text color={"#003153"} fontSize={30} fontWeight={400} >Cityville</Text>
                 </Flex>
                 {isMdOrLarger ? <Flex align="center" justify="space-between" >
@@ -102,7 +114,9 @@ export default function WithSubnavigation() {
                     >
                         Projects
                     </Link>
-                    <InputGroup w="13%">
+                    <Box>
+                        <SearchIcon boxSize={5} w="50px" style={{ cursor: "pointer" }} />
+                    {/*<InputGroup w="13%">
                         <InputLeftElement pointerEvents='none'>
                             <SearchIcon boxSize={5} style={{ cursor: "pointer" }} />
                         </InputLeftElement>
@@ -112,7 +126,8 @@ export default function WithSubnavigation() {
                                 border: "1px solid rgba(0, 0, 0, 0.2) !important",
                             }}
                         />
-                    </InputGroup>
+                    </InputGroup>*/}
+                    </Box>
                     <Link
                         width="80px"
                         as={RouterLink}
@@ -138,10 +153,10 @@ export default function WithSubnavigation() {
                         Register
                     </Link>
                 </Flex> : 
-                    <Flex
-                        flex={{ base: 1, md: 'auto' }}
-                        ml={{ base: -2 }}
-                        display={{ base: 'flex', md: 'none' }}>
+                    <Box>
+                        {/*flex={{ base: 1, md: 'auto' }}
+                        //ml={{ base: -2 }}
+                        //display={{ base: 'flex', md: 'none' }}>*/}
                         <IconButton
                             onClick={onToggle}
                             icon={
@@ -150,79 +165,57 @@ export default function WithSubnavigation() {
                             variant={'ghost'}
                             aria-label={'Toggle Navigation'}
                         />
-                    </Flex>
+                    </Box>
                 }
             </Flex>}
             <Box position="relative" >
-                <MobileNav isOpen={isOpen}/>
+                <MobileNav isOpen={isOpen} onToggle={onToggle}/>
             </Box>
         </Box>
     );
 }
 
-const MobileNav = ({ isOpen }) => {
+const MobileNav = ({ isOpen, onToggle }) => {
     return (
-        <Box position="fixed" zIndex="1" w="100%" /*h="100vh"*/>
+        <Box position="fixed" zIndex="1" w="100%" bgColor=" #F0F6F5" /*h="100vh"*/>
         { isOpen ? (
            <Stack
             h="100vh"
-            bg={'gray.800'}
+            bgColor=" #F0F6F5"
             p={4}
             display={{ md: 'none' }}>
             {NAV_ITEMS.map((navItem) => (
-                <MobileNavItem key={navItem.label} {...navItem} />
+                <MobileNavItem key={navItem.label} {...navItem} onToggle={onToggle}/>
             ))}
         </Stack>) : null}
         </Box >
     );
 };
 
-const MobileNavItem = ({ label, children, href }) => {
-    const { isOpen } = useDisclosure();
+const MobileNavItem = ({ label, onToggle }) => {
 
     return (
         <Stack spacing={4}>
             <Flex
-                py={2}
-                as={Link}
-                href={href ?? '#'}
+                py={4}
+                as={RouterLink}
+                to="/"
+                onClick={() => onToggle(false)}
                 justify={'space-between'}
                 align={'center'}
+                fontSize={"xl"}
                 _hover={{
                     textDecoration: 'none',
+                    color: "yellow"
                 }}>
                 <Text
                     fontWeight={600}
-                    color={useColorModeValue('gray.600', 'gray.200')}>
+                    color={'gray.500'}
+                    _hover={{ color: "#003153"}}
+                    >
                     {label}
                 </Text>
-                {children && (
-                    <Icon
-                        as={ChevronDownIcon}
-                        transition={'all .25s ease-in-out'}
-                        transform={isOpen ? 'rotate(180deg)' : ''}
-                        w={6}
-                        h={6}
-                    />
-                )}
             </Flex>
-
-            <Collapse in={isOpen} animateOpacity style={{ marginTop: '0!important' }}>
-                <Stack
-                    mt={2}
-                    pl={4}
-                    borderLeft={1}
-                    borderStyle={'solid'}
-                    borderColor={useColorModeValue('gray.200', 'gray.700')}
-                    align={'start'}>
-                    {children &&
-                        children.map((child) => (
-                            <Link key={child.label} py={2} href={child.href}>
-                                {child.label}
-                            </Link>
-                        ))}
-                </Stack>
-            </Collapse>
         </Stack>
     );
 };
@@ -230,23 +223,22 @@ const MobileNavItem = ({ label, children, href }) => {
 
 const NAV_ITEMS = [
     {
-        label: 'Inspiration',
-        href: '#',
+        label: 'Home',
     },
     {
-        label: 'Find Work',
-        href: '#',
+        label: 'City Website',
     },
     {
-        label: 'Learn Design',
-        href: '#',
+        label: 'Why Engage',
     },
     {
-        label: 'Hire Designers',
-        href: '#',
+        label: 'Projects',
     },
+    {
+        label: "Sign in"
+    },
+    {
+        label: "Register"
+    }
 ];
 
-/*
-
-*/
